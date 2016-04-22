@@ -8,6 +8,7 @@ extern "C" int WriteDigital(int chan, char level);
 
 
 int motor1(){
+  InitHardware();
   
   
   
