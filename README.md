@@ -12,3 +12,33 @@ Week 1 Checklist:
 - [ ]   Zihao: Assembling the robot – develop a prototype chassis (he will concentrate mainly on the 3D printing, modelling and designing         of the robot.
 
     
+1st code:
+Self note:
+Motor is left, right
+Direction is forward and back
+Speed is from 0-255
+
+My code is:
+
+#include <stdio.h>
+#include <time.h>
+
+extern "C" int InitHardware();
+
+extern "C" int Sleep(int sec, int usec);
+extern "C" int SetMotor(int motor, int dir, int speed);
+
+int main(){
+
+InitHardware();
+
+SetMotor (1, 1, 100);
+SetMotor (2, 1,255);
+Sleep(0,500000);
+
+SetMotor(1, 1, 255);
+SetMotor(2, 1, 100);
+Sleep(0,500000);
+
+return 0;}
+
