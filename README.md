@@ -23,17 +23,14 @@ Week 2 Checklist:
 - [x]   Ned: Getting the robot to move and also helping Sahil with SSH
 - [x]   Ned: Write code to set-up the hardware and get the robot moving
 - [x]   Sahil: Do research on SSH
-- [ ]   Sahil: ~~Start writing the code to make the gate open up~~
-- [ ]   Harry: ~~Assembling the robot~~ (he was unable to do this as it was mid-break and the computer labs were unavailable to for use)
-- [ ]   Harry: ~~Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design~~ (the robot has not been assembled yet)
-- [ ]   Zihao: ~~Use the 3D printer to print the path of the final design for the robot~~ (he was unable to do this because it was mid-break)
+- [ ]   ~~Sahil: Start writing the code to make the gate open up~~
+- [ ]   ~~Harry: Assembling the robot~~ (he was unable to do this as it was mid-break and the computer labs were unavailable to for use)
+- [ ]   ~~Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design~~ (the robot has not been assembled yet)
+- [ ]   ~~Zihao: Use the 3D printer to print the path of the final design for the robot~~ (he was unable to do this because it was mid-break)
+
 
 Incomplete Tasks from Week 1:
-- [ ]  Sahil: ~~Writing codes to get the robot to communicate with the computer~~
-
-
-
-
+- [ ]  ~~Sahil: Writing codes to get the robot to communicate with the computer~~
 
 
 
