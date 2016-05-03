@@ -29,9 +29,26 @@ open_stream_screen();
 while(true){
   take_picture();
   //checks the whiteness of the center pixel
-  wc = get_pixel(320,240,3);
+  wc = get_pixel(160,120,3);
   //prints the value obtained
   printf("%d\n",wc);
+  //checks the whiteness of the left center pixel
+  wl = get_pixel(80,60,3);
+  //prints the value obtained
+  printf("%d\n",wl);
+  //checks the whiteness of the right center pixel
+  wr = get_pixel(240,180,3);
+  //prints the value obtained
+  printf("%d\n",wr);
+  
+  if (wl > wc){
+  turn_left();
+  }else if (wr > wc){
+  turn_right();
+  }else{
+  keep_foward();
+  }
+  
   
   //puts new picture on the screen
   update_screen();
@@ -42,5 +59,5 @@ close_screen_stream();
 }
 
 //need to test with the camera and robot, 
-//then I can work on getting checks on pixels on the left and right side of the picture
+//then I can create the variables for turn_left and turn_right
 //once this is done, I can set-up the motor to turn towards the whiter side of the picture
