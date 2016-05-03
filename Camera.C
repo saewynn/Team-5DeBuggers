@@ -35,11 +35,9 @@ while(true){
   
   //puts new picture on the screen
   update_screen();
-  
-  
-  
-    Sleep(0,1000000);
-  
+  Sleep(0,1000000);
+}
+close_screen_stream();
   
 }
 
