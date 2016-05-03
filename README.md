@@ -44,10 +44,16 @@ Week 3 Checklist:
 - [ ] Ned: Develop robot movement
 
 
+Incomplete Task from Week 1:
+- [x]  Sahil: Writing codes to get the robot to communicate with the computer
 
 
+Incomplete Tasks from Week 2
 
-
+ ~~Sahil: Start writing the code to make the gate open up~~
+- [ ]   ~~Harry: Assembling the robot~~ (he was unable to do this as it was mid-break and the computer labs were unavailable to for use)
+- [ ]   ~~Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design~~ 
+- [ ]   ~~Zihao: Use the 3D printer to print the path of the final design for the robot
 
 
 
