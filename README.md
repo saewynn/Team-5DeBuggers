@@ -36,6 +36,18 @@ Incomplete Tasks from Week 1:
 
 
 
+Week 3 Checklist:
+- [x]   E2: Writing weekly updates/ checklists
+- [x]   E2: Check each team member progress 
+- [x]   Sahil:Do SSH and upload code
+- [x]   Ned: Create code for the camera to take a picture and measure the whiteness of the pixels, allowing the robot to move toward the white line.
+- [ ] Ned: Develop robot movement
+
+
+
+
+
+
 
 
 
