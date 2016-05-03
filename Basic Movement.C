@@ -9,6 +9,7 @@ extern "C" int ReadAnalog (int ch_adc);
 
 
 int main(){
+InitHardware();
 int adc_reading = ReadAnalog(0);
 printf("%d\n",adc_reading);
 while(1){
