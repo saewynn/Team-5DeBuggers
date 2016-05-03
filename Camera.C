@@ -60,4 +60,6 @@ close_screen_stream();
 
 //need to test with the camera and robot, 
 //then I can create the variables for turn_left and turn_right
-//once this is done, I can set-up the motor to turn towards the whiter side of the picture
+//after this is done, I can set-up the motor to turn towards the whiter side of the picture
+//once all of that is complete, I will refine the code using the method from the lecute
+//Multiplying ‘whiteness’ by pixel location and sum the result.
