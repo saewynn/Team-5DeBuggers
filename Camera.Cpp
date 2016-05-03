@@ -49,7 +49,6 @@ while(true){
   keep_foward();
   }
   
-  
   //puts new picture on the screen
   update_screen();
   Sleep(0,1000000);
