@@ -23,7 +23,6 @@ Week 2 Checklist:
 - [ ]   Zihao: Assembling the robot – develop a prototype chassis (he will concentrate mainly on the 3D printing, modelling and designing         of the robot.
 
 
-
     
 1st code:
 Self note:
