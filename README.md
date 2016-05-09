@@ -7,9 +7,11 @@ Week 1 Checklist:
 - [x]  Ned: Setup team GitHub repository
 - [x]  Sahil: Checking each member has successfully submitted their AVC plans
 - [ ]  ~~Sahil: Writing codes to get the robot to communicate with the computer~~
-- [ ]  ~~Haochen(Harry): Physically connecting the computer to the robot~~(he will now mainly focus on assembling the robot - he was unable to do a lot because our team's first lab was on Friday)
 - [x]  Zihao: Assembling the robot
-- [ ]  ~~Zihao: Develop a prototype chassis~~(he will concentrate mainly on the 3D printing, modelling and designing of the robot - he was unable to do much but he started on the 3D printing)
+- [ ]  ~~Zihao: Develop a prototype chassis~~(he will concentrate mainly on the 3D printing, modelling and designing of the robot - he started on the 3D printing)
+- [x]  Haochen(Harry): Helping zihao with the assembling of the robot
+- [ ]  ~~Haryy: Physically connecting the computer to the robot~~(he was unable to do this because there was not enough time)
+    
 
 
 
