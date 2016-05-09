@@ -14,7 +14,6 @@ Week 1 Checklist:
     
 
 Week 1 Review (22nd Apil 2016)
-
 - [x] Everyone this really well this week given the fact our first lab was on a Friday - so we were not able to do much. Our AVC plans were due that Friday at midnight so our main
 focus was completing our AVC plans.
 - [x] Everyone other than Sahil and Harry completed their assigned tasks - Sahil started on writing some some codes but did not complete and Harry had not time left to try and connect
@@ -50,8 +49,10 @@ Incomplete Tasks from Week 1:
 - [ ]  ~~Haryy: Physically connecting the computer to the robot~~(it was mid-break, so the labs were closed)
 
 
-
-
+Week 2 Review:
+- [x] Since the following week was a mid-break, it was very difficult for any of the team members to get anything/much done, as the ENGR 101 labs were not available to use. 
+Especically, for Harry and Zihao as they are both working on the hardware part of this AVC challenge. And even if Sahil and Ned had written some codes, they would be unable to go and
+test if the code works in the labs.
 
 
 
