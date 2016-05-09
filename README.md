@@ -13,20 +13,22 @@ Week 1 Checklist:
 - [ ]  ~~Haryy: Physically connecting the computer to the robot~~(he was unable to do this because there was not enough time)
     
 
-
-
-
 Week 1 Review (22nd Apil 2016)
 
--[ ] Everyone did well this week given the fact our first lab was on a Friday - we were not able to do much. Our AVC plans were due on that Friday midnight so our main focus was 
-completing our AVC plans.
--[ ] Since the following week was mid-break, it was very difficult
--[ ]   
-    Bonnie will help Leo to catchup
-    All up to date files on Github (Woot! We made our first real code commit today!)
-    Leo, Bonnie and Darren attended the team meeting this week (Tyler sent his apologies deue to illness)
-    Leo, Bonnie and Darren were at the lab this week.
-    Everyone has signed the AVC plan, we're working on the Background section of the progress report now. We have decided not to share them within the group.
+-[x] Everyone this really well this week given the fact our first lab was on a Friday - so we were not able to do much. Our AVC plans were due that Friday at midnight so our main
+focus was completing our AVC plans.
+-[x] Everyone other than Sahil and Harry completed their assigned tasks - Sahil started on writing some some codes but did not complete and Harry had not time left to try and connect
+the computer to the robot.
+-[x] We have set goals for the next week(Week 2 checklist)
+-[x] Sahil would try to finish writing his code
+-[x] Since the following week was a mid-break, it was very difficult for any of the team members get anything/much done, as the ENGR 101 labs were not available to use. Especically, for
+Harry and Zihao as they were both responsible for the hardware part of this AVC challenge. And even if Sahil and Ned had written some codes, they would be unable to go use the labs
+to test if the code works.
+-[x] Everyone signed the AVC plan. 
+
+
+
+
 
 
 
