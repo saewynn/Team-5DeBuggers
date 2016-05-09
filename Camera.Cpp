@@ -39,10 +39,7 @@ int main(){
   open_screen_stream();
   
   
-  turn_right = set_motor(1,255),set_motor(2,150)
-  turn_left =  set_motor(2,255),set_motor(1,150)
-  drive_foward =  set_motor(1,255),set_motor(2,255)
-  
+
    
   
   
@@ -56,20 +53,25 @@ int main(){
     while(1){
        take_picture();
        int sum = 0;
+       float kp = 0.5;
        int ,w ,s;
        for(int x = 0; x < 320; x++){
             w = get_pixel(x,120,3);
        if (w>127){s=1;};
        else{s=0;};
        sum = sum + (x-160)*s;}
+       proportional_signal = sum * kp;
             if (sum < 0){
-                turn_right();
+                set_motor(1, proportional_signal);
+                set_motor(2, -1*proportional_signal);
             }
             else if (sum > 0){
-                turn_right();
+                set_motor(1, -1*proportional_signal);
+                set_motor(2, proportional_signal);
             }
             else(){
-                drive_foward();
+                 set_motor(1, proportional_signal);
+                set_motor(2,  proportional_signal);
             }
        update_screen();
         
