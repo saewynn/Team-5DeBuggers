@@ -30,32 +30,34 @@ to test if the code works.
 
 
 
-
-
-
-
-
-
-
-
 Week 2 Checklist:
 - [x]   Ei Htoo(E2): Arrange team meetings/ meet-ups via facebook
 - [x]   E2: Update GitHub with progress; write weekly updates/ checklists
-- [ ]   ~~Ned: Create code for the camera to take a picture and measure the whiteness of the pixels, allowing the robot to move toward the white line~~
+- [ ]   ~~Ned: Create code for the camera to take a picture and measure the whiteness of the pixels, allowing the robot to move toward the white line~~(he wrote some basic codes
+but he could not test them to see if his codes actually worked as the labs were closed during the mid-break)
 - [x]   Sahil: Do research on SSH
+- [x]   Sahil: Start writing the code to make the gate open up (he started to write basic codes after researching SSH)
 - [ ]   ~~Ned: Getting the robot to move~~
 - [ ]   ~~Ned: Write code to set-up the hardware and get the robot moving~~
-
-- [ ]   ~~Sahil: Start writing the code to make the gate open up~~
 - [ ]   ~~Harry: Assembling the robot~~ (he was unable to do this as it was mid-break and the computer labs were unavailable to for use)
-- [ ]   ~~Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design~~ (the robot has not been assembled yet)
+- [ ]   ~~Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design~~
 - [ ]   ~~Zihao: Use the 3D printer to print the path of the final design for the robot~~ (he was unable to do this because it was mid-break)
 
 
 Incomplete Tasks from Week 1:
-- [ ]  ~~Sahil: Writing codes to get the robot to communicate with the computer~~
+- [ ]  ~~Sahil: Writing codes to get the robot to communicate with the computer~~ (there was no time left)
+- [ ]  ~~Zihao: Develop a prototype chassis~~(he still could not get this done as it was mid-break)
+- [ ]  ~~Haryy: Physically connecting the computer to the robot~~(it was mid-break, so the labs were closed)
 
-We 
+
+
+
+
+
+
+
+
+
 
 
 
