@@ -1,74 +1,88 @@
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
+extern "C" int init_hardware();
 extern "C" int init(int d_lev);
-extern "C" int Sleep( int sec, int usec);
-extern "C" int set_motor(int dir, int motor, int speed);
-extern "C" int get_pixel(int pixel, int pixel, int pixel);
-extern "C" int take_picture();
 extern "C" int display_picture(int delay_sec,int delay_usec);
-extern "C" int open_screen_stream();
-extern "C" int close_screen_stream();
-extern "C" int update_screen();
+extern "C" int save_picture(char filename[5]);
+extern "C" int set_motor(int motor,int speed);
+extern "C" int select_IO(int chan, int direct);
+extern "C" int read_analog(int ch_adc);
+extern "C" int Sleep(int sec, int usec);
+extern "C" int write_digital(int chan,char level);
+extern "C" int read_digital(int chan);
+extern "C" int set_PWM(int chan, int value);
 extern "C" int connect_to_server( char server_addr[15],int port);
 extern "C" int send_to_server(char message[24]);
 extern "C" int receive_from_server(char message[24]);
+extern "C" int take_picture();
+extern "C" char get_pixel(int row, int col, int color);
+extern "C" void set_pixel(int col, int row, char red,char green,char blue);
+extern "C" int open_screen_stream();
+extern "C" int close_screen_stream();
+extern "C" int update_screen();
+
 
 
 int main(){
-//initalises the hardware and ensures it is working correctly
-init(1);
-
-   connect_to_server("130.195.6.196", 1024); //Opening the gate code
+  init(0);
+  int x;
+  
+  connect_to_server("130.195.6.196", 1024); //Opening the gate code
    send_to_server("Please");
    char message[24];
    receive_from_server(message);
    printf("%s", message);
    send_to_server(message);
    
-//sets a variable for the centre of the picture
-char wc;
-//sets a variable for the left side of the picture
-char wl;
-//sets a variable for the right side of the picture
-char wr;
-
-//connects the camera to the screen
-open_stream_screen();
-
-while(true){
-  take_picture();
-  //checks the whiteness of the center pixel
-  wc = get_pixel(160,120,3);
-  //prints the value obtained
-  printf("%d\n",wc);
-  //checks the whiteness of the left center pixel
-  wl = get_pixel(80,60,3);
-  //prints the value obtained
-  printf("%d\n",wl);
-  //checks the whiteness of the right center pixel
-  wr = get_pixel(240,180,3);
-  //prints the value obtained
-  printf("%d\n",wr);
+  open_screen_stream();
   
-  if (wl > wc){
-  turn_left();
-  }else if (wr > wc){
-  turn_right();
-  }else{
-  keep_foward();
-  }
   
-  //puts new picture on the screen
-  update_screen();
-  Sleep(0,1000000);
+  turn_right = set_motor(1,255),set_motor(2,150)
+  turn_left =  set_motor(2,255),set_motor(1,150)
+  drive_foward =  set_motor(1,255),set_motor(2,255)
+  
+   
+  
+  
+  
+  
+   for (x = 0; x < 8; x++)
+    {
+      select_IO(x,0);
+      write_digital(x,1);
+    }
+    while(1){
+       take_picture();
+       int sum = 0;
+       int ,w ,s;
+       for(int x = 0; x < 320; x++){
+            w = get_pixel(x,120,3);
+       if (w>127){s=1;};
+       else{s=0;};
+       sum = sum + (x-160)*s;}
+            if (sum < 0){
+                turn_right();
+            }
+            else if (sum > 0){
+                turn_right();
+            }
+            else(){
+                drive_foward();
+            }
+       update_screen();
+        
+       for (x = 0 ; x < 8; x++)
+       {
+       int adc_reading = read_analog(x);
+       printf("ai=%d av=%d\n",x,adc_reading);
+       }
+     }
+    close_screen_stream();
+    set_motor(1,0);
+    set_motor(2,0);
+  
+    return 0;
+
 }
-close_screen_stream();
-  
-}
-
-//need to test with the camera and robot, 
-//then I can create the variables for turn_left and turn_right
-//after this is done, I can set-up the motor to turn towards the whiter side of the picture
-//once all of that is complete, I will refine the code using the method from the lecute
-//Multiplying ‘whiteness’ by pixel location and sum the result.
