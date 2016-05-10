@@ -96,6 +96,10 @@ We were able to finally get the robot moving. Sahil's code to open the gate work
 Week 4 Checklist:
 
 
+Week 4 Review:
+Because Zihao did not like the overall design, Sahil, Harry, me and Zihao all had to take the robot apart and start from scratch. Because of this we were unable to do test if the code written by Ned worked. This week was also a very hectic week
+as we all had a COMP 102 test to revise for.
+
 
 
 
