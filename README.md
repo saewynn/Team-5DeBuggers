@@ -69,27 +69,28 @@ Week 3 Checklist:
 - [x]   Harry: Observe the robot when it is moving along the maze 
 
 
-
-
-
-
-
-
-Incomplete Task from Week 1:
-
-
+Incomplete Tasks from Week 1:
+- [x]  Sahil: Writing codes to get the robot to communicate with the computer
+- [x]  Zihao: Develop a prototype chassis
+- [x]  Haryy: Physically connecting the computer to the robot (Sahil helped with this)
 - [x]  Sahil: Writing codes to get the robot to communicate with the computer (SSH)
 
 
-
 Incomplete Tasks from Week 2
-
-- [x] Sahil: Start writing the code to make the gate open up
+- [ ]   ~~Ned: Create code for the camera to take a picture and measure the whiteness of the pixels, allowing the robot to move toward the white line~~(he wrote some basic codes
+but he could not test them to see if his codes actually worked as the labs were closed during the mid-break)
 - [ ]   ~~Ned: Getting the robot to move~~
 - [ ]   ~~Ned: Write code to set-up the hardware and get the robot moving~~
 - [x]   Harry: Assembling the robot
-- [ ]   ~~Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design (Sahil also contributed to this as well)
-- [x]   Zihao: Use the 3D printer to print the path of the final design for the robot (he 3D printed the for the remaining 
+- [x]   Harry: Finalised designs of the model (robot) - providing some feedback, suggestions and opinions on the final robot design
+- [x]  ~~Zihao: Use the 3D printer to print the path of the final design for the robot~~ (there was no time left - he had to go complete one of his assignments)
+
+
+
+
+
+
+
 
 
     
