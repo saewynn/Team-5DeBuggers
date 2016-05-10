@@ -86,6 +86,25 @@ but he could not test them to see if his codes actually worked as the labs were 
 - [x]  ~~Zihao: Use the 3D printer to print the path of the final design for the robot~~ (there was no time left - he had to go complete one of his assignments)
 
 
+Week 3 Review:
+
+Everyone except Ned came to the team meeting this week - where we were supposed to work on some codes and develop a prototype chassis (Ned sent his apologies due to illness).
+We were able to finally get the robot moving. Sahil's code to open the gate worked successfully but.....
+
+
+
+Week 4 Checklist:
+
+
+
+
+
+
+
+
+
+
+
 
 
 
