@@ -57,29 +57,21 @@ test if the code works in the labs.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Week 3 Checklist: 
-- [x]   E2: Writing weekly updates/ checklists - Update GitHub
-- [ ]   ~~E2: Debug codes~~
-- [x]   E2: Check each team member progress 
-- [x]   Sahil: Figure out SSH 
-- [ ]   ~~Ned: Create code for the camera to take a picture and measure the whiteness of the pixels, allowing the robot to move toward the white line~~
-- [ ]   ~~Ned: Develop robot movement~~
-- [x]   Harry: Make modifications to the robot design if any errors were to occur
-- [ ]   ~~Harry: Observe the robot when it is moving along the maze~~ (we have not tried 
-- [ ]   Zihao modify the design if any errors pop up and develop the design.
+- [x]   E2: Check each member progress
+- [ ]   ~~E2: Debug codes~~ (there was no time left)
+- [x]   E2: Writing weekly updates/ checklists - Update GitHub 
+- [x]   Sahil: Figure out SSH/ do SSH and upload the code.
+- [ ]   ~~Ned: Develop robot movement~~(he was sick so Sahil stepped in and wrote a code to get the robot moving)
+- [x]   Zihao: Make modifications to the robot design if any error were to occur during the trial runs/ experiements/ when testing if the code works
+- [ ]   ~~Zihao: Modify the design~~ (he was unable to use the 3D printer as others were also using it
+- [x]   Harry: Help Zihao modify the design if any errors were to pop up when running the robot
+- [x]   Harry: Observe the robot when it is moving along the maze 
+
+
+
+
+
 
 
 
