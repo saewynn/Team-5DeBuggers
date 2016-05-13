@@ -26,7 +26,7 @@ extern "C" int update_screen();
 
 
 int main(){
-  init(0);
+  init(1);
   int x;
   
   connect_to_server("130.195.6.196", 1024); //Opening the gate code
