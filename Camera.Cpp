@@ -89,3 +89,65 @@ int main(){
 }
 
 //To be completely honest, I have no idea what is going on in this code. But we did run the code as the gate opened so it should be fine
+ extern "C" int init_hardware();
+ extern "C" int init(int d_lev);
+ 
++extern "C" int Sleep(int sec, int usec);
++
+ extern "C" int take_picture();
+ extern "C" char get_pixel(int row, int col, int color);
+ extern "C" void set_pixel(int col, int row, char red,char green,char blue);
+@@ -20,7 +22,10 @@ extern "C" int set_motor(int motor,int speed);
+ int main() {
+   
+   init(0);
+-
++  
++  int total_error = 0;
++  int error_period = 0.2;
++  int previous_error = 0;
+   int speed = 45;
+   
+   
+@@ -38,7 +43,9 @@ int main() {
+     int proportional_signal = 0;  
+     int integral_signal = 0;
+     int derivative_signal = 0;
+-
++    
++    int error_difference = 0;
++  
+     int brightness = 0;              //to store the brightness value of the scanned pixel
+     int pixel_type = 0;              //0 is a black pixel and 1 is a white pixel (on the line)
+ 
+@@ -52,17 +59,22 @@ int main() {
+       }
+       sum = sum + (i - 160)*pixel_type;
+     }
++    
++    total_error = total_error + sum;
++    error_difference = sum - previous_error;
++    
++    previous_error = sum;
+ 
+     proportional_signal = sum*kp;
++    integral_signal = total_error*ki;
++    derivative_signal = (error_difference/error_period)*kd;
+     
+-    if(proportional_signal > 255) {
+-      proportional_signal = 255;
+-    }
+-    else if(proportional_signal < -256) {
+-      proportional_signal = -256;
+-    }
++    signal_sum = proportional_signal + integral_signal + derivative_signal;
+ 
+-    set_motor(1, speed + proportional_signal);       //the + value may need to be changed after testing
+-    set_motor(2, speed - -1*proportional_signal);    //the - value may need to be changed after testing
++    set_motor(1, speed + signal_sum);
++    set_motor(2, speed + signal_sum);
++    
++    Sleep(0,200000);
+   }
++  return 0;
+ }
