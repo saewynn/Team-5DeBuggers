@@ -26,37 +26,53 @@ extern "C" int update_screen();
 
 int main(){
 
-  init(0);
-  int x;
+    init(0);
+
   
-   for (x = 0; x < 8; x++)
-    {
-      select_IO(x,0);
-      write_digital(x,1);
-    }
     while(1){
+
        take_picture();
        int pixelval = 0;
        int num = 0;
        int error=0;
+       int s;
        
        for(int x = 0; x < 320; x++){
-            pixelval = get_pixel(120,x,3);
-            error = pixelval - 160;
-            printf(pixelval);
-            num++;
+            pixelval = get_pixel(x,120,3);
+            if(pixelval > 127){ 
+              // pixel white
+              s = 1;
             }
-            if(num>0){
-            error=error/num;
-            }else{
-            set_motor(1,-25);
-            set_motor(1,-25);
-            }
+	    else{
+              //oixel black
+		s = 0;
+	    }
+            error = error+(x-160)*s;
+            num = num + s;
+         }
+
+         printf("error=%d\n",error);
+
+         if(num>0){ 
+              // at least one white pixel
+              printf("Forward\n");
+              error=error/num;
+
+              //printf("%d\n", pixelval);
+              //error=error/num; 
+              int v1 = -90 - 0.6*error;  
+              int v2 = -90 + 0.6*error;
+              printf("v1 = %d v2 = %d\n",v1,v2); 
+              set_motor(1,v1);
+              set_motor(2,v2);
+          }else{
+              // no white pixels at all
+              printf("Backing\n");
+              set_motor(1,125);
+              set_motor(2,125);
+          }
+          Sleep(0,500000);  
+         }// while
             
-            set_motor(1,65+0.1*error);
-            set_motor(2,65-0.1*error);
-            }
-            sleep(0,1000000);
-            
-            return;
-            }
+            return 0;
+}
