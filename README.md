@@ -94,9 +94,10 @@ but he could not test them to see if his codes actually worked as the labs were 
 
 
 Week 3 Review:
-
 Everyone except Ned came to the team meeting this week - where we were supposed to work on some codes and develop a prototype chassis (Ned sent his apologies due to illness).
-We were able to finally get the robot moving. Sahil's code to open the gate worked successfully but.....
+We were able to finally get the robot moving but not the way we want it to - which is to follow the white line. Sahil's networking code to open the gate worked successfully worked.
+On our AVC plan, we wrote we would complete quadrant 1, but because we did not have any other code except the networking code done, we could not test our robot.
+
 
 
 
@@ -106,13 +107,9 @@ We were able to finally get the robot moving. Sahil's code to open the gate work
 
 
 Week 4 Review:
-Finally, all the team members were at the lab and we were all able to test the code Ned had written for the robot to follow the white line and to get through quadrant 1. Sahil had also managed to finally get the networking code to work; the code for opening the gate for a short period of 4 seconds. Since our progress reports were due in on Monday, Zihao, Harry and I were working on our reports. Both Sahil and Ned explained how their codes worked (how it is supposed to work) and Zihao and Harry explained the components they used to assemble the robot. Because Zihao was not satisfied with the overall design of the robot Sahil, Harry, me and Zihao all worked togehter to take the robot apart and changed the black wheels and to make it into a tank (rubber band. After that, both Sahil and Ned began testing the code. There was however a problem with the code as the robot kept on spinning in circles and would not do what we wanted it too. Then it was suggested to us by our lab demonstrator, the problem could be due to the speed the motors are set to. Because we had tank wheels, we would require a much faster speed to get it to move as there was a greater friction. Sahil and Ned tried and did various things to see get the code working; such as increasing the speeds, etc. We later thought that maybe it was a hardware problem - there might have been an issue with the camera. But we later realised that the problem is the code. We were all 
-pretty worn our after 4 hours in the lab so we gave it rest.
+Finally, all the team members were at the lab and we were all able to test the code Ned had written for the robot to follow the white line and to get through quadrant 1. Sahil had also managed to finally get the networking code to work; the code for opening the gate for a short period of 4 seconds. Since our progress reports were due in on Monday, Zihao, Harry and I were working on our reports. Both Sahil and Ned explained how their codes worked (how it is supposed to work) and Zihao and Harry explained the components they used to assemble the robot. Because Zihao was not satisfied with the overall design of the robot Sahil, Harry, me and Zihao all worked togehter to take the robot apart and changed the black wheels and to make it into a tank (rubber band. After that, both Sahil and Ned began testing the code. There was however a problem with the code as the robot kept on spinning in circles and would not do what we wanted it too. Then it was suggested to us by our lab demonstrator, the problem could be due to the speed the motors are set to. Because we had tank wheels, we would require a much faster speed to get it to move as there was a greater friction. Sahil and Ned tried and did various things to see get the code working; such as increasing the speeds, etc. We later thought that maybe it was a hardware problem - there might have been an issue with the camera. But we later realised that the problem is the code. We were all pretty worn our after 4 hours in the lab so we gave it rest.
 Our initial AVC plan included us completing Quadrant 1 and 2 by Week 4 but we could not stay on track with our plan as the written codes would not work the we had wanted it to.
-
-
-
-This week was also a very hectic week as we all had a COMP 102 test to revise for.
+This week was also a very hectic week as we all had a COMP 102 test to revise for so our main focus was on the test.
 
 
 
