@@ -29,6 +29,9 @@ to test if the code works.
 
 
 
+
+
+
 Week 2 Checklist:
 - [x]   Ei Htoo(E2): Arrange team meetings/ meet-ups via facebook
 - [x]   E2: Update GitHub with progress; write weekly updates/ checklists
@@ -53,6 +56,10 @@ Week 2 Review:
 - [x] Since the following week was a mid-break, it was very difficult for any of the team members to get anything/much done, as the ENGR 101 labs were not available to use. 
 Especically, for Harry and Zihao as they are both working on the hardware part of this AVC challenge. And even if Sahil and Ned had written some codes, they would be unable to go and
 test if the code works in the labs.
+
+
+
+
 
 
 
@@ -93,11 +100,33 @@ We were able to finally get the robot moving. Sahil's code to open the gate work
 
 
 
-Week 4 Checklist:
+
+
+
 
 
 Week 4 Review:
-- [x]  Because Zihao did not like the overall design, Sahil, Harry, me and Zihao all had to take the robot apart and start from scratch. Because of this we were unable to do test if the code written by Ned worked. This week was also a very hectic week as we all had a COMP 102 test to revise for.
+Finally, all the team members were at the lab and we were all able to test the code Ned had written for the robot to follow the white line and to get through quadrant 1. Sahil had also managed to finally get the networking code to work; the code for opening the gate for a short period of 4 seconds. Since our progress reports were due in on Monday, Zihao, Harry and I were working on our reports. Both Sahil and Ned explained how their codes worked (how it is supposed to work) and Zihao and Harry explained the components they used to assemble the robot. Because Zihao was not satisfied with the overall design of the robot Sahil, Harry, me and Zihao all worked togehter to take the robot apart and changed the black wheels and to make it into a tank (rubber band. After that, both Sahil and Ned began testing the code. There was however a problem with the code as the robot kept on spinning in circles and would not do what we wanted it too. Then it was suggested to us by our lab demonstrator, the problem could be due to the speed the motors are set to. Because we had tank wheels, we would require a much faster speed to get it to move as there was a greater friction. Sahil and Ned tried and did various things to see get the code working; such as increasing the speeds, etc. We later thought that maybe it was a hardware problem - there might have been an issue with the camera. But we later realised that the problem is the code. We were all 
+pretty worn our after 4 hours in the lab so we gave it rest.
+Our initial AVC plan included us completing Quadrant 1 and 2 by Week 4 but we could not stay on track with our plan as the written codes would not work the we had wanted it to.
+
+
+
+This week was also a very hectic week as we all had a COMP 102 test to revise for.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
