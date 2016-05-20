@@ -44,7 +44,7 @@ int main(){
               s = 1;
             }
 	    else{
-              //oixel black
+              //pixel black
 		s = 0;
 	    }
             error = error+(x-160)*s;
@@ -59,17 +59,18 @@ int main(){
               error=error/num;
 
               //printf("%d\n", pixelval);
-              //error=error/num; 
-              int v1 = -90 - 0.6*error;  
-              int v2 = -90 + 0.6*error;
+             
+              int mod = 0.3; 
+              int v1 = -60 - mod*error;  
+              int v2 = -60 + mod*error;
               printf("v1 = %d v2 = %d\n",v1,v2); 
               set_motor(1,v1);
               set_motor(2,v2);
           }else{
               // no white pixels at all
               printf("Backing\n");
-              set_motor(1,125);
-              set_motor(2,125);
+              set_motor(1,80);
+              set_motor(2,80);
           }
           Sleep(0,500000);  
          }// while
