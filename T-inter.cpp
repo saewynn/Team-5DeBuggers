@@ -36,12 +36,23 @@ int main(){
        int num = 0;
        int error=0;
        int s;
+       bool left = false;
+       bool straight = false;
+       bool right = false;
+       
 
        for(int x = 0; x < 320; x++){
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){ 
               // pixel white
               s = 1;
+              if ( x >= 120){
+                  left = true;
+              }else if{ x >= 240 
+                  straight = true;
+              }else{
+                  right = true
+              }
             }
             else{
               //oixel black
@@ -78,15 +89,23 @@ if(num<150){
 }else if(num>150){
 printf("T-intersection\n")
 // all we need to do is code it, so that it prioritses turning left > straight > right.
-set_motor(1,0);
-set_motor(2,0);
-Sleep(0,800000);
-set_motor(1,-85);
-set_motor(2,-85);
-Sleep(0,300000);
-set_motor(2,-120);
-set_motor(1,120);
-Sleep(0,300000);
+if (left && straight && right){
+    //turn left
+}else if(left && straight){
+    //turn left
+}else if(left && right){
+    //turn left
+}else if(left){
+    //turn left
+}else if(straight && right){
+    //go straight
+}else if(straight){
+    //go straight
+}else if(right){
+    //go right
+}
+}
+}
 }
          }// while
 
