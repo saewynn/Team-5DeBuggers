@@ -69,13 +69,15 @@ if(num<150){
           }else{
               // no white pixels at all
               printf("Backing\n");
-              set_motor(1,90);
+              //we need to change this so instead of backing, it will turn around.
+              set_motor(1,0);
               set_motor(2,90);
           }
           Sleep(0,400000);  
 
 }else if(num>150){
-printf("T-intersection\n"); 
+printf("T-intersection\n")
+// all we need to do is code it, so that it prioritses turning left > straight > right.
 set_motor(1,0);
 set_motor(2,0);
 Sleep(0,800000);
