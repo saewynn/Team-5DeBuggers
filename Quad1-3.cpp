@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <time.h>
 #include <string.h>
 
@@ -36,17 +36,17 @@ int main(){
        int num = 0;
        int error=0;
        int s;
-       
+
        for(int x = 0; x < 320; x++){
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){ 
               // pixel white
               s = 1;
             }
-	    else{
+            else{
               //oixel black
-		s = 0;
-	    }
+                s = 0;
+            }
             error = error+(x-160)*s;
             num = num + s;
          }
@@ -60,19 +60,24 @@ int main(){
 
               //printf("%d\n", pixelval);
               //error=error/num; 
-              int v1 = -90 - 0.6*error;  
-              int v2 = -90 + 0.6*error;
+              int v1 = -90 + 0.75*error;  
+              int v2 = -90 - 0.75*error;
               printf("v1 = %d v2 = %d\n",v1,v2); 
               set_motor(1,v1);
               set_motor(2,v2);
           }else{
               // no white pixels at all
               printf("Backing\n");
-              set_motor(1,125);
-              set_motor(2,125);
+              set_motor(1,90);
+              set_motor(2,90);
           }
           Sleep(0,500000);  
          }// while
-            
+
             return 0;
 }
+
+
+
+
+
