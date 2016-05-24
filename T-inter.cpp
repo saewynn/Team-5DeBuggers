@@ -46,11 +46,11 @@ int main(){
             if(pixelval > 127){ 
               // pixel white
               s = 1;
-              if ( x >= 120){
+              if ( x =< 80){
                   left = true;
-              }else if{ x >= 240 
+              }else if{ x >= 140 && x <= 200){
                   straight = true;
-              }else{
+              }else if(x >= 280){
                   right = true
               }
             }
