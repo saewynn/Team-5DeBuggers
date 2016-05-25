@@ -85,7 +85,7 @@ if(num<150){
               set_motor(2,90);
           }
           Sleep(0,400000);  
-
+//may need to write methods about if some are wrong and some are false?? I have no clue.
 }else if(num>150){
 printf("T-intersection\n")
 // all we need to do is code it, so that it prioritses turning left > straight > right.
