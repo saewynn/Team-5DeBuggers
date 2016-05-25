@@ -55,7 +55,7 @@ int main(){
               }
             }
             else{
-              //oixel black
+              //pixel black
                 s = 0;
             }
             error = error+(x-160)*s;
