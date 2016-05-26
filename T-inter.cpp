@@ -42,7 +42,7 @@ int main(){
        
 
        for(int x = 0; x < 320; x++){
-            pixelval = get_pixel(x,120,3);
+            pixelval = get_pixel(x,120,3);//middle
             if(pixelval > 127){ 
               // pixel white
               s = 1;
