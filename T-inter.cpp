@@ -107,33 +107,49 @@ printf("T-intersection\n");
 
 // all we need to do is code it, so that it prioritses turning left > straight > right.
 if (left && straight && right){
-    //turn left
+    turnLeft();
 }else if(left && straight){
-    //turn left
+    turnLeft();
 }else if(left && right){
-    //turn left
+    turnLeft();
 }else if(left){
-    //turn left
+    turnLeft();
 }else if(straight && right){
-    //go straight
+    goStraight();
 }else if(straight){
-    //go straight
+    goStraight();
 }else if(right){
-    //go right
+    turnRight();
 }
 }
 }
 }
          }// while
 
-            return 0;
+            return 0;}
+void stop(){
+SetMotor(1,0);
+SetMotor(2,0);
+Sleep(0,500000);
+}
             
+void turnLeft(){
+SetMotor(1,-90);
+SetMotor(2,90);
+Sleep(0,500000);
+}            
             
+void turnRight(){
+SetMotor(1,90);
+SetMotor(2,-90);
+Sleep(0,500000);
+}            
             
-            
-            
-            
-            
+void goStraight(){
+SetMotor(1,-90);
+SetMotor(2,-90);
+Sleep(0,500000);
+}            
             
             
             
