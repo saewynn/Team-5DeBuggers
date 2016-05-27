@@ -68,10 +68,10 @@ int main(){
 
 		proportional_signal = error*0.75;		
 
-		currentError = error
+		currentError = error;
         	Differential_signal = (previousError-CurrentError)*0.05;
 		
-		 errorSignal = proportional_signal + Differential_signal 
+		 errorSignal = proportional_signal + Differential_signal; 
 
               //printf("%d\n", pixelval);
               //error=error/num;
