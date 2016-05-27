@@ -241,9 +241,6 @@ if(num<150){
 }if(num=240){
 printf("T-intersection\n");
 }
-
-
-
 // all we need to do is code it, so that it prioritses turning left > straight > right.
 else if (left && straight && right){
     //turn left
