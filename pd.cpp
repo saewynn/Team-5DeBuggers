@@ -37,9 +37,9 @@ int main(){
        int error=0;
        int s;
        int proportional_signal;
-	int Differential_signal;
-	int errorSignal; 
-	int previousError;
+       int Differential_signal;
+       int errorSignal; 
+       int previousError;
 	
 	
 
@@ -50,7 +50,7 @@ int main(){
               s = 1;
             }
             else{
-              //oixel black
+              //pixel black
                 s = 0;
             }
             error = error+(x-160)*s;
