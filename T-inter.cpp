@@ -36,6 +36,9 @@ int main(){
        int num = 0;
        int error=0;
        int s;
+       int leftnum=0;
+       int straightnum=0;
+       int rightnum=0;
        bool left = false;
        bool straight = false;
        bool right = false;
@@ -47,11 +50,11 @@ int main(){
               // pixel white
               s = 1;
               if ( x =< 80){
-                  left = true;
+                  leftnum = leftnum+s;
               }else if{ x >= 140 && x <= 200){
-                  straight = true;
+                  straightnum = strightnum+s;
               }else if(x >= 280){
-                  right = true
+                  rightnum = rightnum+s;
               }
             }
             else{
@@ -60,6 +63,17 @@ int main(){
             }
             error = error+(x-160)*s;
             num = num + s;
+         }
+         
+         if(leftnum>10){
+            left=true; 
+         }
+         if(straightnum>10){
+            straight=true; 
+         }
+         if(rightnum>10){
+            right=true; 
+         }
          }
 
          printf("error=%d\n",error);
