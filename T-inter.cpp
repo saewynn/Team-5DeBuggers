@@ -123,31 +123,37 @@ int main(){
 
 
 if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
-goStraight();
+set_motor(1,-100);
+set_motor(2,-100);
+Sleep(0,500000);
 printf("Intersection\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix==0){
-goStraight();
-turnLeft();
+set_motor(1,-100);
+set_motor(2,100);
+Sleep(0,500000);
 printf("TInter\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && leftpix>7 && rightpix==0){
-goStraight();
-turnLeft();
+set_motor(1,-100);
+set_motor(2,100);
+Sleep(0,500000);
 printf("left\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && rightpix>7 && leftpix==0){
-goStraight();
-turnRight();
+set_motor(1,100);
+set_motor(2,-100);
+Sleep(0,500000);
 printf("right\n");
 
 Sleep(0,500000);
 }else if(centerpix==0 && rightpix==0 && leftpix==0 && forwardpix==0){
-stop();
-goBack();
+set_motor(1,90);
+set_motor(2,90);
+Sleep(0,500000);
 }else{
          if(num>0){
               // at least one white pixel
@@ -174,7 +180,7 @@ goBack();
 }// while
 
             return 0;}
-            
+/*            
 void stop(){
 set_motor(1,0);
 set_motor(2,0);
