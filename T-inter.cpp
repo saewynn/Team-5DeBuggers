@@ -58,6 +58,8 @@ int main(){
               //oixel black
                 s = 0;
             }
+            error = error+(x-160)*s;
+            num = num + s;
             }
         for(int x = 0; x <10 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
