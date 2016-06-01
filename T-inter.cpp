@@ -51,7 +51,7 @@ int main(){
        
         for(int x = 0; x <10 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 127){
+            if(pixelval > 80){
               // pixel white
               numL = 1;
             }
@@ -65,7 +65,7 @@ int main(){
 
         for(int x = 155; x <165 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 127){
+            if(pixelval > 80){
               // pixel white
               numC = 1;
             }
@@ -79,7 +79,7 @@ int main(){
 
         for(int x = 310; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 127){
+            if(pixelval > 80){
               // pixel white
               numR = 1;
             }
@@ -93,7 +93,7 @@ int main(){
 
         for(int x = 120; x <240 ; x++){        //Going Downn camera Y
             pixelval = get_pixel(160,x,3);      //To check if there is a line ahead
-            if(pixelval > 127){
+            if(pixelval > 80){
               // pixel white
               numF = 1;
             }
@@ -117,7 +117,7 @@ printf("Intersection\n");
 Sleep(0,500000);
 
 
-Sleep(0,500000);
+
 }else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix==0){
 set_motor(1,-100);
 set_motor(2,100);
@@ -125,7 +125,7 @@ printf("TInter\n");
 Sleep(0,500000);
 
 
-Sleep(0,500000);
+
 }else if(centerpix>7 && leftpix>7 && rightpix==0){
 set_motor(1,-100);
 set_motor(2,100);
