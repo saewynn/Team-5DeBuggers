@@ -67,8 +67,8 @@ int main(){
 
               //printf("%d\n", pixelval);
               //error=error/num; 
-              int v1 = -95 + 0.82*error;  
-              int v2 = -95 - 0.82*error;
+              int v1 = -90 + 0.82*error;  
+              int v2 = -90 - 0.82*error;
               printf("v1 = %d v2 = %d\n",v1,v2); 
               set_motor(1,v1);
               set_motor(2,v2);
