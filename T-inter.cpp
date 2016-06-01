@@ -107,7 +107,8 @@ int main(){
 
         printf("num=%d\n", num);
         printf("center=%d\n", centerpix);
-         printf("error=%d\n",error);
+        printf("error=%d\n",error);
+        printf("forward=%d\n",forwardpix);
 
 
 if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
