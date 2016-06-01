@@ -26,7 +26,14 @@ extern "C" int update_screen();
 
 int main(){
 
-    init(0);
+    init(1);
+   
+   connect_to_server("130.195.6.196", 1024);
+   send_to_server("Please");
+   char message[24];
+   receive_from_server(message);
+   printf("%s", message);
+   send_to_server(message);
 
   
     while(1){
