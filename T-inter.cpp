@@ -165,7 +165,7 @@ printf("right\n");
 Sleep(0,500000);
 }else if(centerpix==0 && rightpix==0 && leftpix==0 && forwardpix==0){
 stop();
-goBack()
+goBack();
 }
 
 
@@ -175,26 +175,26 @@ goBack()
             return 0;
 }
 void stop(){
-SetMotor(1,0);
-SetMotor(2,0);
+setMotor(1,0);
+setMotor(2,0);
 Sleep(0,500000);
 }
             
 void turnLeft(){
-SetMotor(1,-100);
-SetMotor(2,100);
+setMotor(1,-100);
+setMotor(2,100);
 Sleep(0,500000);
 }            
             
 void turnRight(){
-SetMotor(1,100);
-SetMotor(2,-100);
+setMotor(1,100);
+setMotor(2,-100);
 Sleep(0,500000);
 }            
             
 void goStraight(){
-SetMotor(1,-100);
-SetMotor(2,-100);
+setMotor(1,-100);
+setMotor(2,-100);
 Sleep(0,500000);
 }
 void goBack(){
