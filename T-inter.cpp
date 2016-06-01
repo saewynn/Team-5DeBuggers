@@ -164,8 +164,9 @@ printf("right\n");
 
 Sleep(0,500000);
 }else if(centerpix==0 && rightpix==0 && leftpix==0 && forwardpix==0){
-
-
+stop();
+goBack()
+}
 
 
 
