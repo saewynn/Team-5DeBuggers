@@ -175,26 +175,26 @@ goBack();
             return 0;
 }
 void stop(){
-setMotor(1,0);
-setMotor(2,0);
+set_motor(1,0);
+set_motor(2,0);
 Sleep(0,500000);
 }
             
 void turnLeft(){
-setMotor(1,-100);
-setMotor(2,100);
+set_motor(1,-100);
+set_motor(2,100);
 Sleep(0,500000);
 }            
             
 void turnRight(){
-setMotor(1,100);
-setMotor(2,-100);
+set_motor(1,100);
+set_motor(2,-100);
 Sleep(0,500000);
 }            
             
 void goStraight(){
-setMotor(1,-100);
-setMotor(2,-100);
+set_motor(1,-100);
+set_motor(2,-100);
 Sleep(0,500000);
 }
 void goBack(){
