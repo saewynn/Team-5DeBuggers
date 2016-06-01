@@ -48,19 +48,7 @@ int main(){
         
         
 
-       for(int x = 0; x < 320; x++){
-            pixelval = get_pixel(x,120,3);
-            if(pixelval > 127){
-              // pixel white
-              s = 1;
-            }
-            else{
-              //oixel black
-                s = 0;
-            }
-            error = error+(x-160)*s;
-            num = num + s;
-            }
+       
         for(int x = 0; x <10 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){
@@ -155,6 +143,20 @@ set_motor(1,90);
 set_motor(2,90);
 Sleep(0,500000);
 }else{
+    for(int x = 0; x < 320; x++){
+            pixelval = get_pixel(x,120,3);
+            if(pixelval > 127){
+              // pixel white
+              s = 1;
+            }
+            else{
+              //oixel black
+                s = 0;
+            }
+            error = error+(x-160)*s;
+            num = num + s;
+            }
+            
          if(num>0){
               // at least one white pixel
               printf("Forward\n");
