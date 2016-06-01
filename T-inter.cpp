@@ -109,6 +109,8 @@ printf("My process ID : %d\n", getpid());
         printf("center=%d\n", centerpix);
         printf("error=%d\n",error);
         printf("forward=%d\n",forwardpix);
+        printf("Left=%d\n",lefttpix);
+        printf("Right=%d\n",rightpix);
 
 
 if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
