@@ -1,5 +1,5 @@
 
-
+#include <unistd.h>
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
@@ -188,6 +188,12 @@ printf("////////////////// \n");
 }// while
 
             return 0;}
+int main(void){
+
+printf("My process ID : %d\n", getpid());
+
+return 0;}            
+
 /*            
 void stop(){
 set_motor(1,0);
