@@ -49,7 +49,7 @@ printf("My process ID : %d\n", getpid());
         
 
        
-        for(int x = 0; x <10 ; x++){        //LEft pixels 0-10
+        for(int x = 0; x <80 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
             if(pixelval > 80){
               // pixel white
@@ -77,7 +77,7 @@ printf("My process ID : %d\n", getpid());
             centerpix = centerpix + numC;
          }
 
-        for(int x = 310; x <320 ; x++){        //Right pixels 310-320
+        for(int x = 270; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
             if(pixelval > 80){
               // pixel white
