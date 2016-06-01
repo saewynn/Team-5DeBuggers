@@ -114,7 +114,7 @@ printf("My process ID : %d\n", getpid());
 if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
 printf("Intersection\n");
 set_motor(1,-100);
-set_motor(2,-100);
+set_motor(2,100);
 
 Sleep(0,500000);
 
