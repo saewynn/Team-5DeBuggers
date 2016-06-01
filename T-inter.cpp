@@ -29,7 +29,7 @@ extern "C" int update_screen();
 int main(){
 
     init(1);
-
+printf("My process ID : %d\n", getpid());
     while(1){
 
        take_picture();
@@ -188,11 +188,7 @@ printf("////////////////// \n");
 }// while
 
             return 0;}
-int main(void){
-
-printf("My process ID : %d\n", getpid());
-
-return 0;}            
+          
 
 /*            
 void stop(){
