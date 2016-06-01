@@ -27,6 +27,8 @@ extern "C" int update_screen();
 
 
 int main(){
+
+    init(1);
 void stop(){
 set_motor(1,0);
 set_motor(2,0);
@@ -55,8 +57,6 @@ set_motor(1,90);
 set_motor(2,90);
 Sleep(0,500000);
 }
-    init(1);
-
 
     while(1){
 
