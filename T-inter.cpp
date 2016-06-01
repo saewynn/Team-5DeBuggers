@@ -38,10 +38,16 @@ int main(){
        int num = 0;
        int error=0;
        int s;
-        int leftpix;
-        int centerpix;
-        int rightpix;
-        int forwardpix;
+        int leftpix=0;
+        int centerpix=0;
+        int rightpix=0;
+        int forwardpix=0;
+        int numL=0;
+        int numR=0;
+        int numC=0;
+        int numF=0;
+        
+        
 
        for(int x = 0; x < 320; x++){
             pixelval = get_pixel(x,120,3);
@@ -58,56 +64,56 @@ int main(){
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){
               // pixel white
-              leftpix = 1;
+              numL = 1;
             }
             else{
               //pixel black
-                leftpix = 0;
+                numL = 0;
             }
 
-            leftpix = leftpix + s;
+            leftpix = leftpix + numL;
          }
 
         for(int x = 155; x <165 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){
               // pixel white
-              centerpix = 1;
+              numC = 1;
             }
             else{
               //pixel black
-              centerpix = 0;
+              numC = 0;
             }
 
-            centerpix = centerpix + s;
+            centerpix = centerpix + numC;
          }
 
         for(int x = 310; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
             if(pixelval > 127){
               // pixel white
-              rightpix = 1;
+              numR = 1;
             }
             else{
               //pixel black
-              rightpix = 0;
+              numR = 0;
             }
 
-            rightpix = rightpix + s;
+            rightpix = rightpix + numR;
          }
 
         for(int x = 120; x <240 ; x++){        //Going Downn camera Y
             pixelval = get_pixel(160,x,3);      //To check if there is a line ahead
             if(pixelval > 127){
               // pixel white
-              forwardpix = 1;
+              numF = 1;
             }
             else{
               //pixel black
-              forwardpix = 0;
+              numF = 0;
             }
 
-            forwardpix = forwardpix + s;
+            forwardpix = forwardpix + numF;
          }
 
         printf("num=%d\n", num);
@@ -135,30 +141,29 @@ if(centerpix>7 && leftpix==0 and rightpix==0){
           }
           Sleep(0,500000);
 }else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
-set_motor(1,-85);
-set_motor(2,-85);
+goStraight();
 printf("Intersection\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix==0){
-set_motor(1,100);
-set_motor(2,-100);
+goStraight();
+turnLeft();
 printf("TInter\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && leftpix>7 && rightpix==0){
-set_motor(1, 100);
-set_motor(2,-100);
+goStraight();
+turnLeft();
 printf("left\n");
 
 Sleep(0,500000);
 }else if(centerpix>7 && rightpix>7 && leftpix==0){
-set_motor(1, -100);
-set_motor(2,100);
+goStraight();
+turnRight();
 printf("right\n");
 
 Sleep(0,500000);
-}
+}else if(centerpix==0 && rightpix==0 && leftpix==0 && forwardpix==0){
 
 
 
@@ -168,7 +173,34 @@ Sleep(0,500000);
 
             return 0;
 }
-
+void stop(){
+SetMotor(1,0);
+SetMotor(2,0);
+Sleep(0,500000);
+}
+            
+void turnLeft(){
+SetMotor(1,-100);
+SetMotor(2,100);
+Sleep(0,500000);
+}            
+            
+void turnRight(){
+SetMotor(1,100);
+SetMotor(2,-100);
+Sleep(0,500000);
+}            
+            
+void goStraight(){
+SetMotor(1,-100);
+SetMotor(2,-100);
+Sleep(0,500000);
+}
+void goBack(){
+set_motor(1,90);
+set_motor(2,90);
+Sleep(0,500000);
+}
 
 /*
 #include <stdio.h>
