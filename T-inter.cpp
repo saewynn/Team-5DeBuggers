@@ -27,7 +27,34 @@ extern "C" int update_screen();
 
 
 int main(){
-
+void stop(){
+set_motor(1,0);
+set_motor(2,0);
+Sleep(0,500000);
+}
+            
+void turnLeft(){
+set_motor(1,-100);
+set_motor(2,100);
+Sleep(0,500000);
+}            
+            
+void turnRight(){
+set_motor(1,100);
+set_motor(2,-100);
+Sleep(0,500000);
+}            
+            
+void goStraight(){
+set_motor(1,-100);
+set_motor(2,-100);
+Sleep(0,500000);
+}
+void goBack(){
+set_motor(1,90);
+set_motor(2,90);
+Sleep(0,500000);
+}
     init(1);
 
 
@@ -174,34 +201,7 @@ goBack();
 
             return 0;
 }
-void stop(){
-set_motor(1,0);
-set_motor(2,0);
-Sleep(0,500000);
-}
-            
-void turnLeft(){
-set_motor(1,-100);
-set_motor(2,100);
-Sleep(0,500000);
-}            
-            
-void turnRight(){
-set_motor(1,100);
-set_motor(2,-100);
-Sleep(0,500000);
-}            
-            
-void goStraight(){
-set_motor(1,-100);
-set_motor(2,-100);
-Sleep(0,500000);
-}
-void goBack(){
-set_motor(1,90);
-set_motor(2,90);
-Sleep(0,500000);
-}
+
 
 /*
 #include <stdio.h>
