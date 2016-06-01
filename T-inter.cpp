@@ -119,27 +119,8 @@ int main(){
         printf("center=%d\n", centerpix);
          printf("error=%d\n",error);
 
-if(centerpix>7 && leftpix==0 and rightpix==0){
-         if(num>0){
-              // at least one white pixel
-              printf("Forward\n");
-              error=error/num;
 
-              //printf("%d\n", pixelval);
-              //error=error/num;
-              int v1 = -90 + 0.8*error;
-              int v2 = -90 - 0.8*error;
-              printf("v1 = %d v2 = %d\n",v1,v2);
-              set_motor(1,v1);
-              set_motor(2,v2);
-          }else{
-              // no white pixels at all
-              printf("Backing\n");
-              set_motor(1,90);
-              set_motor(2,90);
-          }
-          Sleep(0,500000);
-}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
+if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
 goStraight();
 printf("Intersection\n");
 
@@ -165,8 +146,27 @@ Sleep(0,500000);
 }else if(centerpix==0 && rightpix==0 && leftpix==0 && forwardpix==0){
 stop();
 goBack();
-}
+}else{
+         if(num>0){
+              // at least one white pixel
+              printf("Forward\n");
+              error=error/num;
 
+              //printf("%d\n", pixelval);
+              //error=error/num;
+              int v1 = -90 + 0.8*error;
+              int v2 = -90 - 0.8*error;
+              printf("v1 = %d v2 = %d\n",v1,v2);
+              set_motor(1,v1);
+              set_motor(2,v2);
+          }else{
+              // no white pixels at all
+              printf("Backing\n");
+              set_motor(1,90);
+              set_motor(2,90);
+          }
+          Sleep(0,500000);
+}
 
 
 }// while
