@@ -130,28 +130,37 @@ Sleep(0,500000);
 
 }else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<30){
 printf("TInter===================================\n");
+set_motor(1,-200);
+set_motor(2,-200);
+Sleep(0,200000);
 set_motor(1,-150);
 set_motor(2,150);
 
-Sleep(0,500000);
+Sleep(0,700000);
 
 
 
 }else if(centerpix>7 && leftpix>7 && rightpix==0 && forwardpix<20){
 printf("left\n");
+set_motor(1,-200);
+set_motor(2,-200);
+Sleep(0,200000);
 set_motor(1,-150);
 set_motor(2,150);
 
-Sleep(0,500000);
+Sleep(0,700000);
 
 
 
 }else if(centerpix>7 && rightpix>7 && leftpix==0 && forwardpix<20){
 printf("right\n");
+set_motor(1,-200);
+set_motor(2,-200);
+Sleep(0,200000);
 set_motor(1,150);
 set_motor(2,-150);
 
-Sleep(0,500000);
+Sleep(0,700000);
 
 
 
