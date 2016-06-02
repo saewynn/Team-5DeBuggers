@@ -135,7 +135,7 @@ Sleep(0,400000);
 set_motor(1,-175);
 set_motor(2,175);
 
-Sleep(2,30000);
+Sleep(2,50000);
 
 
 
@@ -144,10 +144,10 @@ printf("left\n");
 set_motor(1,-125);
 set_motor(2,-125);
 Sleep(0,500000);
-set_motor(1,-150);
-set_motor(2,150);
+set_motor(1,-175);
+set_motor(2,175);
 
-Sleep(2,30000);
+Sleep(2,50000);
 
 
 
@@ -159,7 +159,7 @@ Sleep(0,500000);
 set_motor(1,175);
 set_motor(2,-175);
 
-Sleep(2,30000);
+Sleep(2,50000);
 
 
 
