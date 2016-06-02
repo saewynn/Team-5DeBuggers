@@ -110,7 +110,7 @@ int main(){
     printf("center=%d\n", centerpix);
     printf("error=%d\n",error);
     printf("forward=%d\n",forwardpix);
-    printf("Left=%d\n",lefttpix);
+    printf("Left=%d\n",leftpix);
     printf("Right=%d\n",rightpix);
     
     if(forwardpix>0){
