@@ -49,7 +49,7 @@ printf("My process ID : %d\n", getpid());
         
 
        
-        for(int x = 0; x <80 ; x++){        //LEft pixels 0-10
+        for(int x = 0; x <20 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
             if(pixelval > 80){
               // pixel white
@@ -91,7 +91,7 @@ printf("My process ID : %d\n", getpid());
             rightpix = rightpix + numR;
          }
 
-        for(int x = 120; x <240 ; x++){        //Going Downn camera Y
+        for(int x = 0; x <120 ; x++){        //Going Downn camera Y
             pixelval = get_pixel(160,x,3);      //To check if there is a line ahead
             if(pixelval > 80){
               // pixel white
@@ -109,7 +109,7 @@ printf("My process ID : %d\n", getpid());
         printf("center=%d\n", centerpix);
         printf("error=%d\n",error);
         printf("forward=%d\n",forwardpix);
-        printf("Left=%d\n",lefttpix);
+        printf("Left=%d\n",leftpix);
         printf("Right=%d\n",rightpix);
 
 
