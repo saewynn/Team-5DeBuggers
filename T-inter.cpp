@@ -132,11 +132,11 @@ Sleep(0,500000);
 printf("TInter===================================\n");
 set_motor(1,-1500);
 set_motor(2,-150);
-Sleep(0,300000);
+Sleep(0,500000);
 set_motor(1,-150);
 set_motor(2,150);
 
-Sleep(0,900000);
+Sleep(1,00000);
 
 
 
@@ -144,11 +144,11 @@ Sleep(0,900000);
 printf("left\n");
 set_motor(1,-150);
 set_motor(2,-150);
-Sleep(0,300000);
+Sleep(0,500000);
 set_motor(1,-150);
 set_motor(2,150);
 
-Sleep(0,900000);
+Sleep(1,00000);
 
 
 
@@ -156,11 +156,11 @@ Sleep(0,900000);
 printf("right\n");
 set_motor(1,-200);
 set_motor(2,-200);
-Sleep(0,200000);
+Sleep(0,500000);
 set_motor(1,150);
 set_motor(2,-150);
 
-Sleep(0,700000);
+Sleep(1,00000);
 
 
 
