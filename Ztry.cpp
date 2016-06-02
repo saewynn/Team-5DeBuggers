@@ -114,8 +114,8 @@ int main(){
     
     if(forwardpix>0){
       printf("ForwardFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\n");
-      int Fmean=(Fmax-Fmin)/2+Fmin;
-      int Cmean=(Cmax-Cmin)/2+Cmin;
+      int Fmean=(Fmax+Fmin)/2;
+      int Cmean=(Cmax+Cmin)/2;
       error=40/(Fmean-Cmean);
       int v1 = -90 + 0.8*error;
       int v2 = -90 - 0.8*error;
