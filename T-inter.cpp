@@ -135,7 +135,7 @@ Sleep(0,400000);
 set_motor(1,-175);
 set_motor(2,175);
 
-Sleep(2,50000);
+Sleep(2,40000);
 
 
 
@@ -147,7 +147,7 @@ Sleep(0,500000);
 set_motor(1,-175);
 set_motor(2,175);
 
-Sleep(2,50000);
+Sleep(2,40000);
 
 
 
@@ -159,7 +159,7 @@ Sleep(0,500000);
 set_motor(1,175);
 set_motor(2,-175);
 
-Sleep(2,50000);
+Sleep(2,40000);
 
 
 
@@ -191,13 +191,14 @@ Sleep(2,50000);
               printf("v1 = %d v2 = %d\n",v1,v2);
               set_motor(1,v1);
               set_motor(2,v2);
+              Sleep(0,500000);
           }else{
               // no white pixels at all
               printf("Backing\n");
               set_motor(1,80);
               set_motor(2,80);
           }
-          Sleep(0,500000);
+          
 }
 
 printf("////////////////// \n");
