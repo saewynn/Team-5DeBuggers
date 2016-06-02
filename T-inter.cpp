@@ -91,7 +91,7 @@ printf("My process ID : %d\n", getpid());
             rightpix = rightpix + numR;
          }
 
-        for(int x = 160; x <240 ; x++){        //Going Downn camera Y
+        for(int x = 0; x <30 ; x++){        //Going Downn camera Y
             pixelval = get_pixel(150,x,3);      //To check if there is a line ahead
             if(pixelval > 80){
               // pixel white
@@ -113,7 +113,7 @@ printf("My process ID : %d\n", getpid());
         printf("Right=%d\n",rightpix);
 
 
-if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>20){
+if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>30){
 printf("Intersection++++++++++++++++++++++++++++++++++\n");
 set_motor(1,-100);
 set_motor(2,-100);
@@ -122,7 +122,7 @@ Sleep(0,500000);
 
 
 
-}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<20){
+}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<30){
 printf("TInter===================================\n");
 set_motor(1,100);
 set_motor(2,-100);
