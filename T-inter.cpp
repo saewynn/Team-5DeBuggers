@@ -1,4 +1,3 @@
-
 #include <unistd.h>
 #include <stdio.h>
 #include <time.h>
@@ -83,7 +82,7 @@ printf("My process ID : %d\n", getpid());
             centerpix = centerpix + numC;
          }
 
-        for(int x = 300; x <320 ; x++){        //Right pixels 300-320
+        for(int x = 300; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
             if(pixelval > 80){
               // pixel white
@@ -119,7 +118,7 @@ printf("My process ID : %d\n", getpid());
         printf("Right=%d\n",rightpix);
 
 
-if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix>29){
+if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>30){
 printf("Intersection++++++++++++++++++++++++++++++++++\n");
 set_motor(1,-200);
 set_motor(2,-200);
@@ -128,8 +127,20 @@ Sleep(0,500000);
 
 
 
-}else if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix<30){
+}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<30){
 printf("TInter===================================\n");
+set_motor(1,-1500);
+set_motor(2,-150);
+Sleep(0,500000);
+set_motor(1,-150);
+set_motor(2,150);
+
+Sleep(1,00000);
+
+
+
+}else if(centerpix>7 && leftpix>7 && rightpix==0 && forwardpix<20){
+printf("left\n");
 set_motor(1,-150);
 set_motor(2,-150);
 Sleep(0,500000);
@@ -140,19 +151,7 @@ Sleep(1,00000);
 
 
 
-}else if(centerpix>8 && leftpix>10 && rightpix==0 && forwardpix<30){
-printf("left\n");
-set_motor(1,-150);
-set_motor(2,-150);
-Sleep(0,500000);
-set_motor(1,-175);
-set_motor(2,175);
-
-Sleep(1,00000);
-
-
-
-}else if(centerpix>8 && rightpix>10 && leftpix==0 && forwardpix<30){
+}else if(centerpix>7 && rightpix>7 && leftpix==0 && forwardpix<20){
 printf("right\n");
 set_motor(1,-200);
 set_motor(2,-200);
@@ -237,14 +236,10 @@ set_motor(2,90);
 Sleep(0,500000);
 }
     
-
-
-
 /*
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
-
 extern "C" int init(int d_lev);
 extern "C" int display_picture(int delay_sec,int delay_usec);
 extern "C" int save_picture(char filename[5]);
@@ -264,16 +259,10 @@ extern "C" void set_pixel(int col, int row, char red,char green,char blue);
 extern "C" int open_screen_stream();
 extern "C" int close_screen_stream();
 extern "C" int update_screen();
-
-
-
 int main(){
-
     init(0);
-
   
     while(1){
-
        take_picture();
        int pixelval = 0;
        int num = 0;
@@ -286,7 +275,6 @@ int main(){
        bool straight = false;
        bool right = false;
        
-
        for(int x = 0; x < 320; x++){
             pixelval = get_pixel(x,120,3);//middle
             if(pixelval > 127){ 
@@ -318,7 +306,6 @@ int main(){
             right=true; 
          }
          }
-
          printf("error=%d\n",error);
          printf("num= %d\n",num);
 if(num<150){
@@ -326,7 +313,6 @@ if(num<150){
               // at least one white pixel
               printf("Forward\n");
               error=error/num;
-
               //printf("%d\n", pixelval);
               //error=error/num; 
               int v1 = -90 + 0.75*error;  
@@ -346,8 +332,6 @@ if(num<150){
 //may need to write methods about if some are wrong and some are false?? I have no clue.
 }else if(num=240){
 printf("T-intersection\n");
-
-
 // all we need to do is code it, so that it prioritses turning left > straight > right.
 if (left && straight && right){
     turnLeft();
@@ -368,7 +352,6 @@ if (left && straight && right){
 }
 }
          }// while
-
             return 0;}
 void stop(){
 SetMotor(1,0);
@@ -394,4 +377,3 @@ SetMotor(2,-90);
 Sleep(0,500000);
 }
 */
-
