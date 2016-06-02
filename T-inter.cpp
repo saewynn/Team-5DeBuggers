@@ -30,6 +30,12 @@ int main(){
 
     init(1);
 printf("My process ID : %d\n", getpid());
+    connect_to_server("130.195.6.196", 1024);
+   send_to_server("Please");
+   char message[24];
+   receive_from_server(message);
+   printf("%s", message);
+   send_to_server(message);
     while(1){
 
        take_picture();
@@ -172,16 +178,16 @@ Sleep(0,500000);
 
               //printf("%d\n", pixelval);
               //error=error/num;
-              int v1 = -90 + 0.8*error;
-              int v2 = -90 - 0.8*error;
+              int v1 = -90 + 0.82*error;
+              int v2 = -90 - 0.82*error;
               printf("v1 = %d v2 = %d\n",v1,v2);
               set_motor(1,v1);
               set_motor(2,v2);
           }else{
               // no white pixels at all
               printf("Backing\n");
-              set_motor(1,90);
-              set_motor(2,90);
+              set_motor(1,80);
+              set_motor(2,80);
           }
           Sleep(0,500000);
 }
