@@ -119,7 +119,7 @@ printf("My process ID : %d\n", getpid());
         printf("Right=%d\n",rightpix);
 
 
-if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix>25){
+if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix>28){
 printf("Intersection++++++++++++++++++++++++++++++++++\n");
 set_motor(1,-200);
 set_motor(2,-200);
