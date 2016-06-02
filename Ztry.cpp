@@ -1,4 +1,3 @@
-# AVC
 #include <unistd.h>
 #include <stdio.h>
 #include <time.h>
@@ -41,6 +40,8 @@ int main(){
     
     int numC=0;
     int numL=0;
+    int numF=0;
+    int numR=0;
     int Fmax;
     int Fmin;
     int Cmax;
@@ -108,7 +109,7 @@ int main(){
     printf("center=%d\n", centerpix);
     printf("error=%d\n",error);
     printf("forward=%d\n",forwardpix);
-    printf("Left=%d\n",lefttpix);
+    printf("Left=%d\n",leftpix);
     printf("Right=%d\n",rightpix);
     
     if(forwardpix>0){
