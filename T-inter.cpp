@@ -119,7 +119,7 @@ printf("My process ID : %d\n", getpid());
         printf("Right=%d\n",rightpix);
 
 
-if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>25){
+if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix>30){
 printf("Intersection++++++++++++++++++++++++++++++++++\n");
 set_motor(1,-200);
 set_motor(2,-200);
@@ -128,7 +128,7 @@ Sleep(0,500000);
 
 
 
-}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<25){
+}else if(centerpix>7 && leftpix>7 && rightpix>7 && forwardpix<30){
 printf("TInter===================================\n");
 set_motor(1,-150);
 set_motor(2,-150);
