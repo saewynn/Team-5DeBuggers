@@ -56,7 +56,7 @@ printf("My process ID : %d\n", getpid());
        
         for(int x = 0; x <20 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 80){
+            if(pixelval > 95){
               // pixel white
               numL = 1;
             }
@@ -70,7 +70,7 @@ printf("My process ID : %d\n", getpid());
 
         for(int x = 165; x <175 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 80){
+            if(pixelval > 95){
               // pixel white
               numC = 1;
             }
@@ -84,7 +84,7 @@ printf("My process ID : %d\n", getpid());
 
         for(int x = 300; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 80){
+            if(pixelval > 95){
               // pixel white
               numR = 1;
             }
@@ -98,7 +98,7 @@ printf("My process ID : %d\n", getpid());
 
         for(int x = 0; x <30 ; x++){        //Going Downn camera Y
             pixelval = get_pixel(150,x,3);      //To check if there is a line ahead
-            if(pixelval > 80){
+            if(pixelval > 95){
               // pixel white
               numF = 1;
             }
