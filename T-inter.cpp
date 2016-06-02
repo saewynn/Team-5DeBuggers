@@ -128,7 +128,7 @@ Sleep(0,500000);
 
 
 
-}else if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix<25){
+}else if(centerpix>8 && leftpix>10 && rightpix>10 && forwardpix<28){
 printf("TInter===================================\n");
 set_motor(1,-150);
 set_motor(2,-150);
