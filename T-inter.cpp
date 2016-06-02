@@ -69,7 +69,7 @@ printf("My process ID : %d\n", getpid());
             leftpix = leftpix + numL;
          }
 
-        for(int x = 155; x <165 ; x++){        //Center pixels 155-165
+        for(int x = 145; x <155 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
             if(pixelval > 80){
               // pixel white
@@ -133,7 +133,7 @@ printf("TInter===================================\n");
 set_motor(1,-100);
 set_motor(2,100);
 
-Sleep(0,500000);
+Sleep(1,500000);
 
 
 
