@@ -162,7 +162,7 @@ Sleep(0,500000);
 set_motor(1,177);
 set_motor(2,-177);
 
-Sleep(2,00000);
+Sleep(1,00000);
 
 
 
@@ -189,8 +189,8 @@ Sleep(2,00000);
 
               //printf("%d\n", pixelval);
               //error=error/num;
-              int v1 = -90 + 0.85*error;
-              int v2 = -90 - 0.85*error;
+              int v1 = -90 + 0.86*error;
+              int v2 = -90 - 0.86*error;
               printf("v1 = %d v2 = %d\n",v1,v2);
               set_motor(1,v1);
               set_motor(2,v2);
