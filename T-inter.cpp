@@ -71,7 +71,7 @@ int main(){
             leftpix = leftpix + numL;
          }
 
-        for(int x = 165; x <175 ; x++){        //Center pixels 155-165
+        for(int x = 155; x <165 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
             if(pixelval > 95){
               // pixel white
