@@ -100,7 +100,7 @@ int main(){
          }
 
         for(int x = 0; x <30 ; x++){        //Going Downn camera Y
-            pixelval = get_pixel(150,x,3);      //To check if there is a line ahead
+            pixelval = get_pixel(130,x,3);      //To check if there is a line ahead
             if(pixelval > 95){
               // pixel white
               numF = 1;
