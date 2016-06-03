@@ -138,7 +138,7 @@ Sleep(0,400000);
 set_motor(1,-178);
 set_motor(2,178);
 
-Sleep(2,30000);
+Sleep(1,50000);
 
 
 
