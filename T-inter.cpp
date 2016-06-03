@@ -147,8 +147,8 @@ printf("left\n");
 set_motor(1,-125);
 set_motor(2,-125);
 Sleep(0,500000);
-set_motor(1,-180);
-set_motor(2,180);
+set_motor(1,-185);
+set_motor(2,185);
 
 Sleep(2,30000);
 
