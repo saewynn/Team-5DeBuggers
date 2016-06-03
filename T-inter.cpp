@@ -199,7 +199,7 @@ Sleep(1,00000);
               // no white pixels at all
               printf("Backing\n");
               set_motor(1,70);
-              set_motor(2,70);
+              set_motor(2,75);
           }
           Sleep(0,500000);
 }
