@@ -142,7 +142,7 @@ Sleep(2,30000);
 
 
 
-}else if(centerpix>7 && leftpix>10 && rightpix==0 && forwardpix<20){
+}else if(centerpix>7 && leftpix>5 && rightpix==0 && forwardpix<20){
 printf("left\n");
 set_motor(1,-125);
 set_motor(2,-125);
@@ -189,8 +189,8 @@ Sleep(2,00000);
 
               //printf("%d\n", pixelval);
               //error=error/num;
-              int v1 = -90 + 0.83*error;
-              int v2 = -90 - 0.83*error;
+              int v1 = -90 + 0.85*error;
+              int v2 = -90 - 0.85*error;
               printf("v1 = %d v2 = %d\n",v1,v2);
               set_motor(1,v1);
               set_motor(2,v2);
