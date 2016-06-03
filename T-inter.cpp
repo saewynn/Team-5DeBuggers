@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
+#include <signal.h>
 
 extern "C" int init(int d_lev);
 extern "C" int display_picture(int delay_sec,int delay_usec);
@@ -24,7 +25,7 @@ extern "C" int open_screen_stream();
 extern "C" int close_screen_stream();
 extern "C" int update_screen();
 
-
+void terminate(int);
 
 int main(){
 
