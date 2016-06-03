@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
@@ -28,7 +29,8 @@ extern "C" int update_screen();
 int main(){
 
     init(1);
-printf("My process ID : %d\n", getpid());
+    signal(SIGTERM, terminate);
+    signal(SIGINT, terminate);
     connect_to_server("130.195.6.196", 1024);
    send_to_server("Please");
    char message[24];
@@ -186,8 +188,8 @@ Sleep(2,30000);
 
               //printf("%d\n", pixelval);
               //error=error/num;
-              int v1 = -90 + 0.82*error;
-              int v2 = -90 - 0.82*error;
+              int v1 = -90 + 0.83*error;
+              int v2 = -90 - 0.83*error;
               printf("v1 = %d v2 = %d\n",v1,v2);
               set_motor(1,v1);
               set_motor(2,v2);
@@ -378,3 +380,9 @@ SetMotor(2,-90);
 Sleep(0,500000);
 }
 */
+
+void terminate(int signum) {
+    set_motor(1, 0);
+    set_motor(2, 0);
+    exit(signum);
+}
