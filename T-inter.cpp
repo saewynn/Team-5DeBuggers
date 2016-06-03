@@ -59,7 +59,7 @@ int main(){
        
         for(int x = 0; x <20 ; x++){        //LEft pixels 0-10
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 95){
+            if(pixelval > 90){
               // pixel white
               numL = 1;
             }
@@ -73,7 +73,7 @@ int main(){
 
         for(int x = 155; x <165 ; x++){        //Center pixels 155-165
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 95){
+            if(pixelval > 90){
               // pixel white
               numC = 1;
             }
@@ -87,7 +87,7 @@ int main(){
 
         for(int x = 300; x <320 ; x++){        //Right pixels 310-320
             pixelval = get_pixel(x,120,3);
-            if(pixelval > 95){
+            if(pixelval > 90){
               // pixel white
               numR = 1;
             }
