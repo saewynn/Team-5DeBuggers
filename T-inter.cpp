@@ -142,7 +142,7 @@ Sleep(1,0000);
 
 
 
-}else if(centerpix>7 && leftpix>5 && rightpix==0 && forwardpix<20){
+}else if(centerpix>7 && leftpix>7 && rightpix==0 && forwardpix<20){
 printf("left\n");
 set_motor(1,-125);
 set_motor(2,-125);
