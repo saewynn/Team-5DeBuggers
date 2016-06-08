@@ -104,7 +104,7 @@ extern "C" void set_pixel(int col, int row, char red,char green,char blue);
 
 extern "C" int open_screen_stream();
 extern "C" int close_screen_stream();
-extern "C" int update_screen();
+extern "C" int update_screen();      //the pics that camera takes can only be seen on the computer screen if we use wire to connect the robot with computer
 extern "C" int display_picture(int delay_sec,int delay_usec);
 extern "C" int save_picture(char filename[5]);
 
