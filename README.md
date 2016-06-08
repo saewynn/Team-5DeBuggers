@@ -17,7 +17,7 @@ Week 1 Checklist:
 - [x]  Zihao: Assembling the robot
 - [ ]  ~~Zihao: Develop a prototype chassis~~(he will concentrate mainly on the 3D printing, modelling and designing of the robot - he started on the 3D printing)
 - [x]  Haochen(Harry): Helping zihao with the assembling of the robot
-- [ ]  ~~Haryy: Physically connecting the computer to the robot~~(he was unable to do this because there was not enough time)
+- [ ]  ~~Harry: Physically connecting the computer to the robot~~(he was unable to do this because there was not enough time)
     
 
 Week 1 Review (22nd Apil 2016)
@@ -56,7 +56,7 @@ but he could not test them to see if his codes actually worked as the labs were 
 Incomplete Tasks from Week 1:
 - [ ]  ~~Sahil: Writing codes to get the robot to communicate with the computer~~ (there was no time left)
 - [ ]  ~~Zihao: Develop a prototype chassis~~(he still could not get this done as it was mid-break)
-- [ ]  ~~Haryy: Physically connecting the computer to the robot~~(it was mid-break, so the labs were closed)
+- [ ]  ~~Harry: Physically connecting the computer to the robot~~(it was mid-break, so the labs were closed)
 
 
 Week 2 Review:
@@ -86,7 +86,7 @@ Week 3 Checklist:
 Incomplete Tasks from Week 1:
 - [x]  Sahil: Writing codes to get the robot to communicate with the computer
 - [x]  Zihao: Develop a prototype chassis
-- [x]  Haryy: Physically connecting the computer to the robot (Sahil helped with this)
+- [x]  Harry: Physically connecting the computer to the robot (Sahil helped with this)
 - [x]  Sahil: Writing codes to get the robot to communicate with the computer (SSH)
 
 
@@ -178,18 +178,18 @@ My code is:
 extern "C" int InitHardware();
 
 extern "C" int Sleep(int sec, int usec);
-extern "C" int SetMotor(int motor, int dir, int speed);
+extern "C" int SetMotor(int motor,  int speed);
 
 int main(){
 
 InitHardware();
 
-SetMotor (1, 1, 100);
-SetMotor (2, 1,255);
+SetMotor (1,100);
+SetMotor (2,255);
 Sleep(0,500000);
 
-SetMotor(1, 1, 255);
-SetMotor(2, 1, 100);
+SetMotor(1,255);
+SetMotor(2,100);
 Sleep(0,500000);
 
 return 0;}
