@@ -57,7 +57,7 @@ int main(){
         
 
        
-        for(int x = 0; x <20 ; x++){        //LEft pixels 0-10
+        for(int x = 0; x <20 ; x++){        //LEft pixels 0 - 10
             pixelval = get_pixel(x,120,3);
             if(pixelval > 95){
               // pixel white
