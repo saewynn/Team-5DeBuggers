@@ -121,7 +121,7 @@ int main(){
         printf("Right=%d\n",rightpix);
 
 
-if(centerpix>7 && leftpix>10 && rightpix>10 && forwardpix>=30){
+if(centerpix>7 && leftpix>10 && rightpix>10 && forwardpix>=30){         //if there's a intersection, make the robot move backwards
 printf("Intersection++++++++++++++++++++++++++++++++++\n");
 set_motor(1,-200);
 set_motor(2,-200);
