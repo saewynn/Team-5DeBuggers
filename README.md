@@ -178,18 +178,18 @@ My code is:
 extern "C" int InitHardware();
 
 extern "C" int Sleep(int sec, int usec);
-extern "C" int SetMotor(int motor,  int speed);
+extern "C" int SetMotor(int motor, int dir, int speed);
 
 int main(){
 
 InitHardware();
 
-SetMotor (1,100);
-SetMotor (2,255);
+SetMotor (1,1,100);
+SetMotor (2,1,255);
 Sleep(0,500000);
 
-SetMotor(1,255);
-SetMotor(2,100);
+SetMotor(1,1,255);
+SetMotor(2,1,100);
 Sleep(0,500000);
 
 return 0;}
