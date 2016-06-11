@@ -2,9 +2,9 @@
     AVC ip 10.140.111.87
 
 Things we need to fix after we have completed the AVC (when we do get another chance):
-The battery 
-The coding
-The wiring
+- [ ] The battery 
+- [ ] The coding
+- [ ] The wiring
 
 
 Week 1 Checklist:
@@ -131,7 +131,17 @@ changed back to the original wheels had initially planned to use - which were th
 Harry brought toy car and wanted to modify the design of the wheels. But the due date is 2 weeks, so all the members decided anything that was not provide to the team will not be used for the design.
 
 The problem was the code had initially worked on the robot with the tank wheels. Zihao's made a few errors when designing the black board with the 3D printer. (The base was too small). Zihao finally decided to switch the tank wheels back to the black big wheels. The problem was the written code worked fine for the tank wheels but because the wheels were changed, Sahil and Ned had to change the speeds of the motors in the code. After countless attempts to get the robot to get through quadrant 1 and 2, Zihao decided to change the wheels back to the tank wheels. He created the design so that the black rubber bands that were attached to the robot would be stronger and saw when turning, the rubber bands wouldn't easily come off. 
+Sahil then used the original code that work and tried to modify it so when the robot turned it would be more smoother and faster. For the whole week, Sahil and Ned tried to write code for quadrant 3; but nothing seemed to be working. Our robot was only able to reach up to quadrant 2. So the team decided that B- was good enough and would try and get a good mark on the AVC final report to get a good overall grade.
 
+
+
+
+
+
+
+
+Week 6
+Our lab was on Friday and up until Wednesday, our team couldn't get the robot to get through quadrant 3. However, very last minute, Sahil and Zihao decided to write code from scratch and Zihao was able to get the robot through to quadrant 3.
 
 
 
@@ -163,33 +173,5 @@ The problem was the code had initially worked on the robot with the tank wheels.
 
 
     
-1st code:
-Self note:
-Motor is left, right
-Direction is forward and back
-Speed is from 0-255
 
-My code is:
-
-#include <stdio.h>
-#include <time.h>
-
-extern "C" int InitHardware();
-
-extern "C" int Sleep(int sec, int usec);
-extern "C" int SetMotor(int motor, int dir, int speed);
-
-int main(){
-
-InitHardware();
-
-SetMotor (1,1,100);
-SetMotor (2,1,255);
-Sleep(0,500000);
-
-SetMotor(1,1,255);
-SetMotor(2,1,100);
-Sleep(0,500000);
-
-return 0;}
 
