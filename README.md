@@ -125,15 +125,14 @@ This week was also a very hectic week as we all had a COMP 102 test to revise fo
 
 
 Week 5 Checklist
-On Monday, Ned and Sahil met up at the lab to work on the code. And they said that they finallly fixed the code and it now works. But the problem was because we had tank wheels (which
-are held together by a rubber wheel/ band), when the robot turned the rubber bands would scrap onto the surface and they would come off. So Sahil suggested that the wheels should be 
-changed back to the original wheels had initially planned to use - which were the big black wheels. Zihao liked the design of the robot being a tank, so what he did was use the 3D 
-printer to create a new board to fit make the wheels more stable - he prefered the tank design compared to the black wheels.
+On Monday, Ned and Sahil met up at the lab to work on the code. And they said that they finallly fixed the code and it now works. But the problem was because we had tank wheels (which are held together by a rubber wheel/ band), when the robot turned the rubber bands would scrap onto the surface and they would come off. So Sahil suggested that the wheels should be 
+changed back to the original wheels had initially planned to use - which were the big black wheels. Zihao liked the design of the robot being a tank, so what he did was use the 3D printer to create a new board to fit make the wheels more stable - he prefered the tank design compared to the black wheels.
 
-Harry brought toy car and wanted to modify the design of the wheels. But the due date is 2 weeks, so all the members disagree. Har
+Harry brought toy car and wanted to modify the design of the wheels. But the due date is 2 weeks, so all the members decided anything that was not provide to the team will not be used for the design.
+
+The problem was the code had initially worked on the robot with the tank wheels. Zihao's made a few errors when designing the black board with the 3D printer. (The base was too small). Zihao finally decided to switch the tank wheels back to the black big wheels. 
 
 
-Harry helped Sahil with the code to get the robot into the maze.
 
 
 
