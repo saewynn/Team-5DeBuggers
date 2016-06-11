@@ -130,7 +130,7 @@ changed back to the original wheels had initially planned to use - which were th
 
 Harry brought toy car and wanted to modify the design of the wheels. But the due date is 2 weeks, so all the members decided anything that was not provide to the team will not be used for the design.
 
-The problem was the code had initially worked on the robot with the tank wheels. Zihao's made a few errors when designing the black board with the 3D printer. (The base was too small). Zihao finally decided to switch the tank wheels back to the black big wheels. 
+The problem was the code had initially worked on the robot with the tank wheels. Zihao's made a few errors when designing the black board with the 3D printer. (The base was too small). Zihao finally decided to switch the tank wheels back to the black big wheels. The problem was the written code worked fine for the tank wheels but because the wheels were changed, Sahil and Ned had to change the speeds of the motors in the code. After countless attempts to get the robot to get through quadrant 1 and 2, Zihao decided to change the wheels back to the tank wheels. He created the design so that the black rubber bands that were attached to the robot would be stronger and saw when turning, the rubber bands wouldn't easily come off. 
 
 
 
