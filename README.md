@@ -141,7 +141,7 @@ Sahil then used the original code that work and tried to modify it so when the r
 
 
 Week 6
-Our lab was on Friday and up until Wednesday, our team couldn't get the robot to get through quadrant 3. However, very last minute, Sahil and Zihao decided to write code from scratch and Zihao was able to get the robot through to quadrant 3.
+Our lab was on Friday and up until Wednesday, our team couldn't get the robot to get through quadrant 3. However, a few hours before the team had to showcase our robot to Arthur, Sahil and Zihao decided to write code from scratch and Zihao was able to get the robot through to quadrant 3.
 
 
 
